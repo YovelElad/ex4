@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/newStyle.css">
+    <script src="js/script.js"> </script>
+    <script src="js/script2.js"> </script>
+    <script src="js/script3.js"> </script>
+    <script src="js/script4.js"> </script>
+    <script src="js/script5.js"> </script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>      
+<h1>Catch'em Form</h1><br>
+<div id="wrapper">
+    <button onclick="move()">Start Filling</button> <br><br>
+
+    <form action="get_params.php" method="GET">
+        
+        <label id="fullName" for="fullName">Full Name:</label><br>
+        <input id="fullNameInput" type="text" name="fullName" pattern="\w+\s\w+" disabled required><br><br>
+
+        <label id="password" for="password">Password:</label><br>
+        <input id="passwordInput" type="password" name="password" disabled required><br><br>
+
+        <label id="guitar" for="guitar">Enter Guitar name:</label><br>
+        <input id="guitarInput" type="text" name="guitar" pattern="gibson|fender|ltd" disabled required><br><br>
+        <p class="guitarOptions"><span class="star">*</span> options: gibson, fender, ltd</p>
+
+        <label id="color" for="color">Enter Color:</label><br>
+        <input id="colorInput" type="text" name="color" pattern="blue|red|black" disabled required>
+        <p class="colorOptions"><span class="star">*</span> options: blue, black, red</p>
+
+        <input id="submit" type="submit">
+    </form>
+</div>
+</body>
+
+</html>

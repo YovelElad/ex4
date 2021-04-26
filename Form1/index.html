@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Yovel Elad</title>
+    <script src="js/script.js"> </script>
+
+</head>
+
+<body>
+
+    <h1>Application form:</h1>
+    <form id="myForm" action="http://se.shenkar.ac.il/teach/web1/2021/get_form3.php" method="GET" onsubmit="return check()" >
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" name="fullName" pattern="\w+\s\w+"><br><br>
+
+        <label for="mail">Email:</label><br>
+        <input type="email" name="mail" placeholder="name@example.com"><br><br>
+
+        <label  for="pass">Password:</label><br>
+        <input id="test" type="password" name="pass" pattern=".{2,}"><br><br>
+
+        <label for="Website">Website:</label><br>
+        <input type="url" name="Website"><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" name="phone" pattern="[0-9]+" minlength="9" maxlength="10"><br><br>
+
+        <label for="coffee">Coffee:</label><br>
+        <input class="coffee"  type="number" name="coffee" ><br><br>
+
+
+        <label for="temper">Temperature:</label><br>
+        <input  type="range" name="temper" min="1" max="10"><br><br>
+
+        <label for="Address">Address:</label><br>
+        <textarea name="Address" rows="6" cols="30"></textarea><br>
+
+
+
+        
+        <h2>Interests:</h2>
+        <input class="chbx" type="checkbox" name="interests[]" value="Reeding Books">
+        <label>Reeding Books</label>
+
+        <input class="chbx" type="checkbox" name="interests[]" value="coding">
+        <label>Programing</label>
+
+        <input class="chbx" type="checkbox" name="interests[]" value="travel">
+        <label>Travel</label>
+        <input class="chbx" type="checkbox" name="interests[]" value="bed"><label>Sleep</label> <br>
+        
+        <p id="chooseOne">Please choose at least one of the options.</p>
+
+
+        <h2>Gender:</h2>
+
+        <input type="radio" name="gender" value="female"><label>Female</label>
+        <input type="radio" name="gender" value="male"><label>Male</label>
+        <input type="radio" name="gender" value="other"><label>Other</label><br><br>
+
+        <label> Age:
+            <select name="age" required>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+            </select>
+        </label> <br><br>
+
+        <input type="submit">
+    </form>
+
+
+</body>
+
+</html>

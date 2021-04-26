@@ -1,0 +1,71 @@
+
+* {
+    font-family: arial;
+}
+body {
+    background-color: gray;
+}
+
+.star {
+    color: red;
+}
+
+#wrapper { 
+      position: relative;
+      background-color: white;
+      width: 1000px;
+      height: 600px;
+      margin: 0 auto;
+  }
+  button {
+      position: absolute;
+      width: 100px;
+      height: 30px;
+      top: 10px;
+      left: 10px;
+  }
+  form {
+      position: relative;
+      height: 600px;
+      padding-top: 40px;
+  }
+
+  input {
+      position: absolute;
+      left: 420px;
+  }
+
+
+
+  p{
+      position: absolute;
+      left: 610px;
+  }
+  .guitarOptions {
+    top: 210px;
+  }
+
+  .colorOptions {
+      top: 285px;
+  }
+
+  label {
+      display: block;
+
+      text-align: center;
+  }
+
+  #submit {
+      position: absolute;
+        left: 475px;
+        top: 400px;
+        visibility: hidden;
+  }
+
+  h1 {
+      text-align:center;
+      display: block;
+  }
+ 
+
+  /*--------------------------------------------------------------------- */

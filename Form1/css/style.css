@@ -1,0 +1,14 @@
+
+* {
+    font-family: arial;
+}
+
+#chooseOne {
+    color: red;
+    visibility: hidden;
+}
+
+.coffee {
+    width: 60px;
+    /* height: 25px; */
+}
